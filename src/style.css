@@ -1,3 +1,63 @@
 * {
     user-select: none;
 }
+
+h1 {
+    text-align: center;
+}
+
+.body-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.slides-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+
+.dot {
+    display: inline-block;
+    margin: .2rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: #999;
+    transition: background-color .8s ease;
+    cursor: pointer;
+
+}
+
+.dot:active,
+.dot:hover {
+    background-color: #223;
+
+}
+
+
+.move {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    text-decoration: none;
+    color: #556;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.move:hover {
+    color: #eee;
+}
+
+.move.left {
+    left: 0;
+}
+
+.move.right {
+    right: 0;
+}

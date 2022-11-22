@@ -10,6 +10,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: '[name].[contenthash].bundlle.js',
+        clean: true,
     },
 
     devServer: {
@@ -22,8 +23,19 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.html$/i,
+                loader: 'html-loader',
+
+            },
+
+            {
                 test: /\.css$/i,
                 use: ['style-loader', 'css-loader'],
+            },
+
+            {
+                test: /\.(svg|png|ico|jpg|jpeg|webp|gif|)$/i,
+                type: "asset/resource",
             },
 
             {
