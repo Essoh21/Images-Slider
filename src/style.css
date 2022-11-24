@@ -20,6 +20,24 @@ h1 {
     position: relative;
 }
 
+.slide.one {
+    display: flex;
+}
+
+.slide {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.number {
+    position: absolute;
+    font-size: 2rem;
+    font-weight: bold;
+    top: 0;
+    color: red;
+}
 
 .dot {
     display: inline-block;
@@ -55,9 +73,9 @@ h1 {
 }
 
 .move.left {
-    left: 0;
+    left: 2rem;
 }
 
 .move.right {
-    right: 0;
+    right: 2rem;
 }
