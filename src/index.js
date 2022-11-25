@@ -25,6 +25,7 @@ function displayNextSlide() {
     if (isLastSlide) {
         hideLastSlide();
         showFirstSlide();
+        currentSlideIndex = firstSlideIndex;
         isLastSlide = false;
     } else {
         hideCurrentSlide();
@@ -49,14 +50,7 @@ function displayPreviousSlide() {
     } else {
         hideCurrentSlide();
         showPreviousSlide();
-        console.log(currentSlideIndex)
         decreaseCurrentSlideIndex();
-        console.log(currentSlideIndex);
-        console.log(isFirstSlide);
-        if (currentSlideIndex = firstSlideIndex) {
-            isFirstSlide = true;
-        }
-
     }
 
 }
