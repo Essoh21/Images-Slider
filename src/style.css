@@ -33,7 +33,7 @@ h1 {
     justify-content: center;
     transition: opacity ease-in-out .6s;
     animation-name: blacken;
-    animation-duration: .6s;
+    animation-duration: 1.5s;
 }
 
 @keyframes blacken {
@@ -48,10 +48,18 @@ h1 {
 
 .number {
     position: absolute;
-    font-size: 2rem;
+    border: 2px solid #225;
+    height: 1.2rem;
+    width: 1.2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #556;
+    font-size: .8rem;
     font-weight: bold;
     top: 0;
-    color: red;
+    color: #09f;
 }
 
 .dot {
@@ -61,7 +69,7 @@ h1 {
     height: 1rem;
     border-radius: 50%;
     background-color: #999;
-    transition: background-color .2s ease;
+    transition: background-color .6s ease;
     cursor: pointer;
 }
 
