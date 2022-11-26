@@ -3,7 +3,7 @@ const HtmlWabpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 
 module.exports = {
-    mode: 'development',
+    mode: 'production',
     entry: {
         index: './src/index.js',
     },
@@ -13,12 +13,12 @@ module.exports = {
         clean: true,
     },
 
-    devServer: {
-        static: path.resolve(__dirname, "dist"),
-        open: true,
-        hot: true
-    },
-
+    /*  devServer: {
+          static: path.resolve(__dirname, "dist"),
+          open: true,
+          hot: true
+      },
+  */
     // loaders 
     module: {
         rules: [
