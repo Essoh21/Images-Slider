@@ -30,7 +30,8 @@ allDots.forEach((dot, dotIndex) => {
     })
 })
 
-setInterval(displayNextSlide, 10000);
+// for automatic slide
+//setInterval(displayNextSlide, 10000);  
 
 function displayNextSlide() {
     if (currentSlideIndex == lastSlideIndex) {
